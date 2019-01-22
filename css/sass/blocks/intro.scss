@@ -1,0 +1,18 @@
+.intro {
+  background: url('../img/bg/intro-bg.jpg') no-repeat;
+  background-size: 100%;
+  height: 647px;
+}
+
+.intro__header {
+  display: flex;
+}
+
+.order--intro {
+  padding-top: 25px;
+}
+
+.intro__content {
+  display: flex;
+  padding-left: 18px;
+}

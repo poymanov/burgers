@@ -1,0 +1,22 @@
+.description__header {
+  color: #f9b43b;
+  font-family: 'Gagalin', Helvetica, sans-serif;
+  font-size: 72px;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+}
+
+.description__subheader {
+  color: $white;
+  font-family: 'Lifehack', Helvetica, sans-serif;
+  font-size: 65px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: lowercase;
+  letter-spacing: -1.63px;
+  line-height: 60px;
+}
+
+.description--intro {
+  padding-top: 118px;
+}
