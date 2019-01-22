@@ -1,0 +1,53 @@
+.review {
+  position: relative;
+  width: 275px;
+  height: 325px;
+
+  &:hover .review__description {
+    display: block;
+  }
+}
+
+.review__description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 275px;
+  height: 325px;
+  background-color: rgba(20, 20, 20, 0.7);
+  padding-top: 41px;
+  padding-left: 20px;
+}
+
+.review__title {
+  color: $white;
+  font-family: 'Gagalin', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28.11px; 
+  margin: 0 0 15px;
+}
+
+.review__text {
+  color: $white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 222px;
+  margin: 0 0 12px 0;
+}
+
+.review__link {
+  display: block;
+  width: 110px;
+  background-color: #2f3234;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  padding: 9px 0 8px;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 13px;
+  font-weight: 500;
+}
