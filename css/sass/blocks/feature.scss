@@ -1,39 +1,12 @@
 .feature {
   text-align: center;
   width: 284px;
-
-  &::before {
-    content: "";
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center center; 
-    margin: 0 auto 29px;
-  }
 }
 
-.feature--meat {
-  &::before {
-    width: 97px;
-    height: 89px;
-    background-image: url("../img/icons/meat.svg");
-  }
-}
-
-.feature--hand {
-  &::before {
-    width: 73px;
-    height: 85px;
-    background-image: url("../img/icons/hand.svg");
-  }
-}
-
-.feature--natural {
-  &::before {
-    width: 88px;
-    height: 75px;
-    background-image: url("../img/icons/natural.svg");
-    margin-bottom: 43px;
-  }
+.feature__img {
+  width: 97px;
+  height: 89px;
+  margin-bottom: 23px;
 }
 
 .feature__title {

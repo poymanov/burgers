@@ -1,11 +1,17 @@
 .review {
   position: relative;
-  width: 275px;
-  height: 325px;
+  width: 25%;
+  height: 50%;
 
   &:hover .review__description {
     display: block;
   }
+}
+
+.review__image {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
 }
 
 .review__description {
@@ -13,8 +19,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 275px;
-  height: 325px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(20, 20, 20, 0.7);
   padding-top: 41px;
   padding-left: 20px;
