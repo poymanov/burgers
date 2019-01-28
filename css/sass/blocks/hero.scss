@@ -1,0 +1,21 @@
+.hero {
+  background: url('../img/bg/hero.jpg') center center / cover no-repeat;
+  height: 647px;
+}
+
+.hero__header {
+  display: flex;
+}
+
+.order--hero {
+  padding-top: 25px;
+}
+
+.hero__content {
+  display: flex;
+  padding-left: 18px;
+}
+
+.hero__buttons {
+  display: flex;
+}

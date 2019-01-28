@@ -314,9 +314,8 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
   position: relative;
   height: 100%; }
 
@@ -326,6 +325,13 @@ ul {
 
 ul li {
   list-style: none; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden; }
 
 @font-face {
   font-family: 'Ubuntu';
@@ -357,29 +363,31 @@ ul li {
   src: url("../fonts/GagalinRegular.woff2") format("woff2"), url("../fonts/GagalinRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
-.intro {
-  background: url("../img/bg/intro.jpg") no-repeat;
-  background-size: 100%;
+.hero {
+  background: url("../img/bg/hero.jpg") center center/cover no-repeat;
   height: 647px; }
 
-.intro__header {
+.hero__header {
   display: flex; }
 
-.order--intro {
+.order--hero {
   padding-top: 25px; }
 
-.intro__content {
+.hero__content {
   display: flex;
   padding-left: 18px; }
 
-.logo--intro {
-  padding-top: 10px;
-  margin-right: 69px;
-  display: block; }
+.hero__buttons {
+  display: flex; }
 
-.nav--intro {
-  padding-top: 34px;
+.logo--hero {
+  padding-top: 10px;
+  display: block;
   margin-right: auto; }
+
+.nav--hero {
+  padding-top: 34px;
+  margin-right: 18px; }
 
 .main-menu {
   display: flex; }
@@ -421,7 +429,7 @@ ul li {
   border-radius: 4px;
   padding: 9px 0 8px; }
 
-.burger--intro {
+.burger--hero {
   margin-top: -10px;
   margin-right: 14px; }
 
@@ -442,7 +450,7 @@ ul li {
   letter-spacing: -1.63px;
   line-height: 60px; }
 
-.description--intro {
+.description--hero {
   padding-top: 118px; }
 
 .scroll-bottom {
@@ -483,9 +491,8 @@ ul li {
   left: -5px; }
 
 .features {
-  background: url("../img/bg/features.jpg") no-repeat center;
-  background-size: cover;
-  height: 649px;
+  background: url("../img/bg/features.jpg") center center/cover no-repeat;
+  height: 651px;
   padding-top: 111px; }
 
 .features__header {
