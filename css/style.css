@@ -738,3 +738,76 @@ ul li {
   padding-left: 33px;
   padding-right: 37px;
   padding-bottom: 62px; }
+
+.contacts {
+  height: 650px;
+  background: url("../img/map.jpg") center top no-repeat/cover;
+  position: relative; }
+
+.footer {
+  background-color: #111111;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; }
+
+.footer__contacts {
+  width: 50%; }
+
+.footer__socials {
+  width: 50%; }
+
+.footer__address {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px; }
+
+.footer__phone {
+  color: #e45028;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center; }
+  .footer__phone:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 11px;
+    background: url("../img/icons/phone.svg") center center no-repeat;
+    margin-right: 7px; }
+
+.container--footer {
+  display: flex;
+  align-items: center; }
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.socials__item {
+  margin-right: 17px; }
+  .socials__item:last-child {
+    margin-right: 0; }
+
+.socials__link {
+  display: block;
+  width: 23px;
+  height: 20px;
+  opacity: 0.3; }
+  .socials__link:hover {
+    opacity: 1; }
+
+.socials__link--vk {
+  background: url("../img/icons/socials/vk.svg") center center no-repeat; }
+
+.socials__link--fb {
+  background: url("../img/icons/socials/fb.svg") center center no-repeat; }
+
+.socials__link--inst {
+  background: url("../img/icons/socials/inst.svg") center center no-repeat; }
+
+.socials__link--tw {
+  background: url("../img/icons/socials/tw.svg") center center no-repeat; }
