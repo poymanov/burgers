@@ -22,38 +22,38 @@
   width: 100%;
   height: 100%;
   background-color: rgba(20, 20, 20, 0.7);
-  padding-top: 41px;
-  padding-left: 20px;
+  padding-top: 2.563em;
+  padding-left: 1.250em;
 }
 
 .review__title {
   color: $white;
   font-family: 'Gagalin', Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
-  line-height: 28.11px; 
-  margin: 0 0 15px;
+  line-height: 2.008em; 
+  margin: 0 0 1.071em;
 }
 
 .review__text {
   color: $white;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 300;
-  line-height: 24px;
-  width: 222px;
-  margin: 0 0 12px 0;
+  line-height: 1.714em;
+  width: 15.857em;
+  margin: 0 0 0.857em 0;
 }
 
 .review__link {
   display: block;
-  width: 110px;
+  width: 8.462em;
   background-color: #2f3234;
   text-decoration: none;
   text-align: center;
-  border-radius: 4px;
-  padding: 9px 0 8px;
+  border-radius: 0.308em;
+  padding: 0.692em 0 0.615em;
   text-transform: uppercase;
   color: $white;
-  font-size: 13px;
+  font-size: 0.813em;
   font-weight: 500;
 }

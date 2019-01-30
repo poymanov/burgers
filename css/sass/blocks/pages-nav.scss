@@ -1,17 +1,17 @@
 .pages-nav {
   position: fixed;
-  right: 50px;
-  top: 94px;
+  right: 3.125em;
+  top: 5.875em;
 }
 
 .pages-nav__item {
-  margin-bottom: 15px;
+  margin-bottom: 0.938em;
 }
 
 .pages-nav__link {
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.375em;
+  height: 0.375em;
   background-color: $white;  
   border-radius: 50%;
   position: relative;
@@ -22,13 +22,13 @@
     &::before {
       content: "";
       display: block;
-      border: 1px solid #ffffff;
-      width: 14px;
-      height: 14px;
+      border: 0.063em solid #ffffff;
+      width: 0.875em;
+      height: 0.875em;
       border-radius: 50%;
       position: absolute;
-      top: -5px;
-      left: -5px;
+      top: -0.313em;
+      left: -0.313em;
     }
   }
 }

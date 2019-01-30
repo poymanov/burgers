@@ -1,28 +1,28 @@
 .feature {
   text-align: center;
-  width: 284px;
+  width: 17.750em;
 }
 
 .feature__img {
-  width: 97px;
-  height: 89px;
-  margin-bottom: 23px;
+  width: 6.063em;
+  height: 5.563em;
+  margin-bottom: 1.438em;
 }
 
 .feature__title {
   color: #2f3234;
   font-family: 'Lifehack', Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 1.500em;
   font-weight: 500;
-  line-height: 28.14px;
-  letter-spacing: -0.6px;
-  margin: 0 0 15px;
+  line-height: 1.173em;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.625em;
 }
 
 .feature__description {
   color: rgba(47, 50, 52, 0.8);
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 300;
-  line-height: 24.02px;
+  line-height: 1.716em;
   margin: 0;
 }

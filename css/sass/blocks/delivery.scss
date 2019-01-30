@@ -1,5 +1,5 @@
 .delivery {
-  height: 650px;
+  height: 40.625em;
   background: url('../img/delivery.jpg') center top no-repeat;
   background-size: cover;
   position: relative;
@@ -8,13 +8,13 @@
 .delivery__header {
   color: $yellow;
   font-family: 'Gagalin', Helvetica, sans-serif;
-  font-size: 72px;
+  font-size: 4.500em;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 0.333em;
 }
 
 .container--delivery {
-  padding-top: 114px;
+  padding-top: 7.125em;
 }

@@ -1,5 +1,5 @@
 .food-menu {
-  height: 650px;
+  height: 40.625em;
   background: url('../img/food-menu.jpg') center top no-repeat / cover;
   position: relative;
 }
@@ -7,13 +7,13 @@
 .food-menu__header {
   color: $white;
   font-family: 'Gagalin', Helvetica, sans-serif;
-  font-size: 72px;
+  font-size: 4.500em;
   font-weight: 400;
 }
 
 .container--food-menu {
-  padding-left: 4px;
-  padding-top: 87px;
+  padding-left: 0.250em;
+  padding-top: 5.438em;
 }
 
 .food-menu-accordeon {
@@ -30,7 +30,7 @@
 }
 
 .food-menu-accordeon__header {
-  width: 80px;
+  width: 5.000em;
   background-position: center top;
   background-repeat: no-repeat;
   display: flex;
@@ -53,7 +53,7 @@
 .food-menu-accordeon__title {
   color: $white;
   font-family: 'Gagalin', Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 2.500em;
   font-weight: 400;
   white-space: nowrap;
   transform: rotate(-90deg);
@@ -65,17 +65,17 @@
   height: 100%;
   background: rgba(47,50,52, .9);
   color: $white;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.714em;
 }
 
 .food-menu-accordeon__item--active {
   .food-menu-accordeon__description {
-    width: 544px;
-    padding-top: 62px;
-    padding-left: 33px;
-    padding-right: 37px;
-    padding-bottom: 62px;
+    width: 38.857em;
+    padding-top: 4.429em;
+    padding-left: 2.357em;
+    padding-right: 2.643em;
+    padding-bottom: 4.429em;
   }
 }
