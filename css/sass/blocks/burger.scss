@@ -1,8 +1,8 @@
 .burger--hero {
   margin-top: -0.625em;
   margin-right: 0.875em;
-  width: 28.188em;
-  height: 26.500em;
+  min-width: 28.188em;
+  min-height: 26.500em;
 }
 
 .burger__img {
@@ -11,8 +11,8 @@
 
 @media (max-width: 480px) {
   .burger--hero {
-    width: 22.563em;
-    height: 21.188em;
+    min-width: 22.563em;
+    min-height: 21.188em;
     margin-bottom: 2.000em;
   }
 }

@@ -411,6 +411,10 @@ ul li {
   display: block;
   margin-right: auto; }
 
+.logo__img {
+  width: 5.750em;
+  height: 4.313em; }
+
 .nav--hero {
   padding-top: 2.125em;
   margin-right: 1.125em; }
@@ -464,16 +468,16 @@ ul li {
 .burger--hero {
   margin-top: -0.625em;
   margin-right: 0.875em;
-  width: 28.188em;
-  height: 26.500em; }
+  min-width: 28.188em;
+  min-height: 26.500em; }
 
 .burger__img {
   max-width: 100%; }
 
 @media (max-width: 480px) {
   .burger--hero {
-    width: 22.563em;
-    height: 21.188em;
+    min-width: 22.563em;
+    min-height: 21.188em;
     margin-bottom: 2.000em; } }
 .description__header {
   color: #f9b43b;
@@ -583,12 +587,11 @@ ul li {
   width: 17.750em; }
 
 .feature__header {
-  width: 6.063em;
-  height: 5.563em;
   margin: 0 auto 1.438em; }
 
 .feature__img {
-  max-width: 100%; }
+  width: 6.063em;
+  height: 5.563em; }
 
 .feature__title {
   color: #2f3234;
