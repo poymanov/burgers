@@ -2,15 +2,6 @@
   display: flex;
 }
 
-.delivery__column {
-  width: 50%;
-  margin-right: 1.250em;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
 .form__row {
   display: flex;
   margin-bottom: 1.250em;

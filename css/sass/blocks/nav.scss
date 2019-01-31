@@ -2,3 +2,9 @@
   padding-top: 2.125em;
   margin-right: 1.125em;
 }
+
+@media (max-width: 768px) {
+  .nav--hero {
+    display: none;
+  }
+}

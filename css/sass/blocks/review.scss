@@ -24,6 +24,7 @@
   background-color: rgba(20, 20, 20, 0.7);
   padding-top: 2.563em;
   padding-left: 1.250em;
+  padding-right: 1.250em;
 }
 
 .review__title {
@@ -56,4 +57,24 @@
   color: $white;
   font-size: 0.813em;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .review {
+    width: 50%;
+    height: 25%;
+  }
+
+  .review__description {
+    text-align: center;
+  }
+
+  .review__text {
+    width: 100%;
+    margin-bottom: 1.929em;
+  }
+
+  .review__link {
+    margin: 0 auto;
+  }
 }

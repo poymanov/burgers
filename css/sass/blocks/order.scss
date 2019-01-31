@@ -11,3 +11,9 @@
   border-radius: 0.308em;
   padding: 0.692em 0 0.615em;
 }
+
+@media (max-width: 768px) {
+  .order__link {
+    margin-right: 1.875em;
+  }
+}

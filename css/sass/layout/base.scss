@@ -11,10 +11,18 @@ body {
 }
 
 .container {
-  width: 940px;
+  width: auto;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 ul {
@@ -32,4 +40,5 @@ ul li {
   min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
+  min-width: 0;
 }

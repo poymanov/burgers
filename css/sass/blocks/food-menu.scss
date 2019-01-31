@@ -79,3 +79,14 @@
     padding-bottom: 4.429em;
   }
 }
+
+@media (max-width: 768px) {
+  .food-menu {
+    height: 64.000em;
+    padding-left: 1.438em;
+  }
+
+  .food-menu-accordeon__header {
+    background-repeat: repeat;
+  }
+}

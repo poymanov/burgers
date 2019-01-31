@@ -1,0 +1,13 @@
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+    width: 1.500em;
+    height: 1.375em;
+    background: url("../img/icons/mobile-menu.svg") center center no-repeat;
+    margin-top: 1.938em;
+  }
+}

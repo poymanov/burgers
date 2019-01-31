@@ -20,3 +20,14 @@
 .description--hero {
   padding-top: 7.375em;
 }
+
+@media (max-width: 768px) {
+  .description--hero {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .description__subheader {
+    width: 99%; 
+  }
+}
