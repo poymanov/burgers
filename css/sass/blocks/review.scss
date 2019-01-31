@@ -45,7 +45,8 @@
   margin: 0 0 0.857em 0;
 }
 
-.review__link {
+.review__link,
+.review__link-mobile {
   display: block;
   width: 8.462em;
   background-color: #2f3234;
@@ -57,6 +58,11 @@
   color: $white;
   font-size: 0.813em;
   font-weight: 500;
+}
+
+.review__link-mobile {
+  display: none;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -76,5 +82,21 @@
 
   .review__link {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {  
+  .review__title {
+    font-size: 1.500em;
+    line-height: 1.171em;
+  }
+
+  .review__link,
+  .review__text {
+    display: none;
+  }
+
+  .review__link-mobile {
+    display: block;
   }
 }

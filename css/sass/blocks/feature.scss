@@ -3,10 +3,14 @@
   width: 17.750em;
 }
 
-.feature__img {
+.feature__header {
   width: 6.063em;
   height: 5.563em;
-  margin-bottom: 1.438em;
+  margin: 0 auto 1.438em;
+}
+
+.feature__img {
+  max-width: 100%;    
 }
 
 .feature__title {
@@ -25,4 +29,25 @@
   font-weight: 300;
   line-height: 1.716em;
   margin: 0;
+}
+
+@media (max-width: 480px) {
+  .feature {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    margin-bottom: 3.113em;
+  }
+
+  .feature__header {
+    margin-right: 1.750em;
+  }
+
+  .feature__content {
+    width: 19.750em;
+  }
+
+  .feature__title {
+    font-size: 1.500em;
+  }
 }

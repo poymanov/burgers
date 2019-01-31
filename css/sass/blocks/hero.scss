@@ -30,3 +30,9 @@
     align-items: center;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    height: 50.000em;
+  }
+}

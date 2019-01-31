@@ -43,3 +43,21 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .delivery {
+    height: 50.000em;
+  }
+
+  .container--delivery {
+    padding-top: 4.125em;
+  }
+
+  .delivery__header {
+    font-size: 3.125em;
+  }
+
+  .delivery__column {
+    width: 100%;
+  }
+}

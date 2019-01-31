@@ -21,7 +21,7 @@
   margin-bottom: 0.357em;
 }
 
-.footer__phone {
+.footer__phone-link {
   color: #e45028;
   font-size: 0.875em;
   font-weight: 700;
@@ -43,3 +43,33 @@
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 480px) {
+  .container--footer {
+    flex-direction: column;
+    padding-top: 1.250em;
+  }
+
+  .footer {
+    height: 7.250em;
+  }
+
+  .footer__contacts {
+    width: 100%;
+    margin-bottom: 1.250em;
+  }
+  
+  .footer__socials {
+    width: 100%;
+  }
+
+  .footer__address {
+    text-align: center;
+  }
+
+  .footer__phone {
+    display: flex;
+    justify-content: center;
+  }
+}
+

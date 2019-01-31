@@ -38,3 +38,9 @@
 .socials__link--tw {
   background: url("../img/icons/socials/tw.svg") center center no-repeat;
 }
+
+@media (max-width: 480px) {
+  .socials {
+    justify-content: center;
+  }
+}
