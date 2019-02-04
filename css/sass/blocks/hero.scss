@@ -1,6 +1,6 @@
 .hero {
   background: url('../img/bg/hero.jpg') center center / cover no-repeat;
-  height: 647px;
+  height: 40.438em;
 }
 
 .hero__header {
@@ -8,14 +8,31 @@
 }
 
 .order--hero {
-  padding-top: 25px;
+  padding-top: 1.563em;
 }
 
 .hero__content {
   display: flex;
-  padding-left: 18px;
+  padding-left: 1.125em;
 }
 
 .hero__buttons {
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 64.000em;
+  }
+
+  .hero__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 50.000em;
+  }
 }

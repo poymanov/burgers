@@ -1,13 +1,19 @@
 .order__link {
-  width: 97px;  
+  width: 7.462em;  
   background-color: #e45028;
   color: $white;
-  font-size: 13px;
+  font-size: 0.813em;
   font-weight: 500;  
   text-transform: uppercase;
   display: block;
   text-decoration: none;
   text-align: center;
-  border-radius: 4px;
-  padding: 9px 0 8px;
+  border-radius: 0.308em;
+  padding: 0.692em 0 0.615em;
+}
+
+@media (max-width: 768px) {
+  .order__link {
+    margin-right: 1.875em;
+  }
 }
