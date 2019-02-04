@@ -1,5 +1,6 @@
 .mobile-menu {
   display: none;
+  z-index: 10;  
 }
 
 @media (max-width: 768px) {
@@ -9,5 +10,9 @@
     height: 1.375em;
     background: url("../img/icons/mobile-menu.svg") center center no-repeat;
     margin-top: 1.938em;
+  }
+
+  .mobile-menu--active {
+    background: url("../img/icons/mobile-menu-active.svg") center center no-repeat;
   }
 }
