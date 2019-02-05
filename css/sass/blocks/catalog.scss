@@ -1,0 +1,28 @@
+.catalog {
+  height: 40.625em;
+  background: linear-gradient(to bottom,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 60%,#f9b43b 100%);
+}
+
+.container--catalog {
+  padding-top: 8.875em;
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    height: 64.000em;
+  }
+
+  .container--catalog {
+    padding-top: 11.750em;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog {
+    height: 50.000em;
+  }
+
+  .container--catalog {
+    padding-top: 10.063em;
+  }
+}
