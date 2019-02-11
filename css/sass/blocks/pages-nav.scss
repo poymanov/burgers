@@ -32,3 +32,9 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .pages-nav {
+    display: none;
+  }
+}
