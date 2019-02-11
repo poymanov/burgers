@@ -87,3 +87,17 @@ sliderLeft.addEventListener('click', e => {
 
   document.querySelector('.slider__wrapper').style.right = `${rightValue}px`;  
 });
+
+// Вызов модального окна с отзывом
+document.querySelectorAll('.review__link, .review__link-mobile').forEach(elem => {
+  elem.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector('.popup').classList.add('opened');
+  });
+});
+
+// Закрытие модального окна
+document.querySelector('.popup__close').addEventListener('click', e => {
+  e.preventDefault();
+  document.querySelector('.popup').classList.remove('opened');
+});
