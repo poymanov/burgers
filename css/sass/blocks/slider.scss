@@ -1,3 +1,17 @@
+.slider {
+  overflow: hidden;
+  height: 100%;
+}
+
+.slider--catalog {
+  padding-top: 8.875em;
+}
+
+.slider__wrapper {
+  position: relative;
+  display: flex;  
+}
+
 .slider__control {
   position: absolute;
   width: 0.813em;
@@ -5,6 +19,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   top: 48%;
+}
+
+.slider__slide {
+  min-width: 58.750em;
 }
 
 .slider__control--prev {
@@ -18,6 +36,10 @@
 }
 
 @media (max-width: 768px) {
+  .slider--catalog {
+    padding-top: 11.750em;
+  }
+
   .slider__control {
     top: 45%;
   }
@@ -29,9 +51,18 @@
   .slider__control--next {
     right: 3.125em;
   }
+
+  .slider__slide {
+    min-width: 45.75em;
+  }
+
 }
 
 @media (max-width: 480px) {
+  .slider--catalog {
+    padding-top: 10.063em;
+  }
+
   .slider__control {
     top: 46%;
   }
@@ -42,5 +73,9 @@
   
   .slider__control--next {
     right: 0.938em;
+  }
+
+  .slider__slide {
+    min-width: 33.75em;
   }
 }

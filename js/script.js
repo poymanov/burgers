@@ -55,3 +55,35 @@ function closeFoodMenuItems() {
     elem.classList.remove('food-menu-accordeon__item--active');
   });
 }
+
+// Слайдер
+step = 940;
+rightValue = 0;
+slideCount = document.querySelectorAll('.slider__slide').length;
+maxRightValue = step * (slideCount - 1);
+
+let sliderRight = document.querySelector('.slider__control--next');
+let sliderLeft = document.querySelector('.slider__control--prev');
+
+sliderRight.addEventListener('click', e => {
+  e.preventDefault();
+
+  if (rightValue >= maxRightValue) {
+    return false;
+  }
+
+  rightValue += step;
+  document.querySelector('.slider__wrapper').style.right = `${rightValue}px`;  
+});
+
+sliderLeft.addEventListener('click', e => {
+  e.preventDefault();
+
+  if (rightValue <= 0) {
+    return false;
+  }
+
+  rightValue -= step;
+
+  document.querySelector('.slider__wrapper').style.right = `${rightValue}px`;  
+});

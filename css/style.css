@@ -673,21 +673,12 @@ ul li {
   height: 40.625em;
   background: linear-gradient(to bottom, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%); }
 
-.container--catalog {
-  padding-top: 8.875em; }
-
 @media (max-width: 768px) {
   .catalog {
-    height: 64.000em; }
-
-  .container--catalog {
-    padding-top: 11.750em; } }
+    height: 64.000em; } }
 @media (max-width: 480px) {
   .catalog {
-    height: 50.000em; }
-
-  .container--catalog {
-    padding-top: 10.063em; } }
+    height: 50.000em; } }
 .catalog-item {
   display: flex;
   position: relative; }
@@ -756,7 +747,12 @@ ul li {
   left: 0;
   text-align: center;
   padding-top: 0.813em;
-  border-radius: 0.313em; }
+  border-radius: 0.313em;
+  cursor: pointer; }
+  .catalog-item__staff:hover {
+    background-color: #e35028; }
+  .catalog-item__staff:hover .catalog-item__details {
+    display: block; }
 
 .catalog-item__staff-title {
   color: #ffffff;
@@ -798,6 +794,47 @@ ul li {
   position: absolute;
   top: 1.850em;
   left: 0.700em; }
+
+.catalog-item__details {
+  display: none;
+  width: 16.875em;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.313em;
+  position: absolute;
+  top: 0;
+  left: 5.625em; }
+
+.catalog-item-details__title {
+  color: #2f3234;
+  font-size: 0.875em;
+  font-weight: 500; }
+
+.catalog-item-details__gr {
+  color: #2f3234;
+  font-size: 0.875em;
+  font-weight: 300; }
+
+.catalog-item-details__list {
+  padding-top: 1.250em;
+  padding-bottom: 1.250em;
+  padding-left: 1.625em;
+  padding-right: 1.250em; }
+
+.catalog-item-details__image {
+  width: 3.000em; }
+
+.catalog-item-details__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.938em; }
+  .catalog-item-details__item:last-child {
+    margin-bottom: 0; }
+
+.catalog-item-details__image {
+  margin-right: 1.625em; }
+
+.catalog-item-details__title {
+  margin-right: auto; }
 
 @media (max-width: 768px) {
   .catalog-item {
@@ -850,6 +887,17 @@ ul li {
     top: -7.313em;
     right: 0;
     left: 24.063em; } }
+.slider {
+  overflow: hidden;
+  height: 100%; }
+
+.slider--catalog {
+  padding-top: 8.875em; }
+
+.slider__wrapper {
+  position: relative;
+  display: flex; }
+
 .slider__control {
   position: absolute;
   width: 0.813em;
@@ -857,6 +905,9 @@ ul li {
   background-position: center center;
   background-repeat: no-repeat;
   top: 48%; }
+
+.slider__slide {
+  min-width: 58.750em; }
 
 .slider__control--prev {
   background-image: url("../img/icons/slider-prev.svg");
@@ -867,6 +918,9 @@ ul li {
   right: -2.250em; }
 
 @media (max-width: 768px) {
+  .slider--catalog {
+    padding-top: 11.750em; }
+
   .slider__control {
     top: 45%; }
 
@@ -874,8 +928,14 @@ ul li {
     left: 3.125em; }
 
   .slider__control--next {
-    right: 3.125em; } }
+    right: 3.125em; }
+
+  .slider__slide {
+    min-width: 45.75em; } }
 @media (max-width: 480px) {
+  .slider--catalog {
+    padding-top: 10.063em; }
+
   .slider__control {
     top: 46%; }
 
@@ -883,7 +943,10 @@ ul li {
     left: 0.938em; }
 
   .slider__control--next {
-    right: 0.938em; } }
+    right: 0.938em; }
+
+  .slider__slide {
+    min-width: 33.75em; } }
 .reviews {
   display: flex;
   flex-wrap: wrap;
@@ -994,8 +1057,20 @@ ul li {
   font-weight: 400;
   margin-bottom: 0.347em; }
 
+@media (max-width: 768px) {
+  .team {
+    height: 64.000em; }
+
+  .team__description {
+    width: 100%;
+    padding: 0;
+    padding-top: 13.813em; }
+
+  .team__header {
+    text-align: center; } }
 .team-accordeon__item {
-  margin-bottom: 1.188em; }
+  margin-bottom: 1.188em;
+  cursor: pointer; }
 
 .team-accordeon__header {
   color: #ffffff;
@@ -1053,17 +1128,6 @@ ul li {
     height: initial; }
 
 @media (max-width: 768px) {
-  .team {
-    height: 64.000em; }
-
-  .team__description {
-    width: 100%;
-    padding: 0;
-    padding-top: 13.813em; }
-
-  .team__header {
-    text-align: center; }
-
   .team-accordeon {
     display: flex;
     flex-direction: column;
@@ -1114,6 +1178,10 @@ ul li {
   padding-left: 0.250em;
   padding-top: 5.438em; }
 
+@media (max-width: 768px) {
+  .food-menu {
+    height: 64.000em;
+    padding-left: 1.438em; } }
 .food-menu-accordeon {
   position: absolute;
   top: 0;
@@ -1123,7 +1191,8 @@ ul li {
 
 .food-menu-accordeon__item {
   background-color: rgba(20, 20, 20, 0.7);
-  display: flex; }
+  display: flex;
+  cursor: pointer; }
 
 .food-menu-accordeon__header {
   width: 5.000em;
@@ -1168,10 +1237,6 @@ ul li {
   padding-bottom: 4.429em; }
 
 @media (max-width: 768px) {
-  .food-menu {
-    height: 64.000em;
-    padding-left: 1.438em; }
-
   .food-menu-accordeon__header {
     background-repeat: repeat; } }
 .delivery {
