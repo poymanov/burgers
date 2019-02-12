@@ -1521,7 +1521,6 @@ ul li {
     display: block; }
 
 .popup__container {
-  width: 28.750em;
   background-color: #ffffff;
   border-radius: 5px;
   padding-left: 1.188em;
@@ -1529,6 +1528,9 @@ ul li {
   padding-bottom: 1.688em;
   padding-top: 1.688em;
   position: relative; }
+
+.popup--reviews .popup__container {
+  width: 28.750em; }
 
 .popup__title {
   color: #2f3234;
@@ -1551,6 +1553,33 @@ ul li {
   right: 1.250em;
   top: 1.250em;
   background: url("../img/popup-close.png") center center no-repeat; }
+
+.popup__close-link {
+  width: 7.462em;
+  background-color: #e45028;
+  color: #ffffff;
+  font-size: 0.813em;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.308em;
+  padding: 0.692em 0 0.615em;
+  display: block;
+  margin: 0 auto; }
+
+.popup__description--delivery {
+  margin-bottom: 15px;
+  text-align: center; }
+
+.popup--delivery .popup__container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-left: 1.088em;
+  padding-right: 1.038em;
+  padding-bottom: 1.088em;
+  padding-top: 1.088em; }
 
 .overlay {
   background: rgba(0, 0, 0, 0.5);

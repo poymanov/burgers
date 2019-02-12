@@ -565,7 +565,7 @@
     <section class="delivery">
       <div class="container container--delivery">
         <div class="delivery__header">Закажите доставку</div>
-        <form action="" class="form form--delivery">
+        <form id="form-delivery" action="" class="form form--delivery">
           <div class="delivery__column">
             <div class="form__row">
               <label class="form__block">
@@ -574,31 +574,31 @@
               </label>
               <label class="form__block">
                 <div class="form__block-title">Телефон</div>
-                <input id="name" type="text" class="form__input">
+                <input id="phone" type="text" class="form__input">
               </label>           
             </div>
             <div class="form__row">
               <label class="form__block">
                 <div class="form__block-title">Улица</div>
-                <input id="name" type="text" class="form__input">
+                <input id="street" type="text" class="form__input">
               </label>     
             </div>
             <div class="form__row">
               <label class="form__block">
                 <div class="form__block-title">Дом</div>
-                <input id="name" type="text" class="form__input">
+                <input id="building-1" type="text" class="form__input">
               </label>     
               <label class="form__block">
                 <div class="form__block-title">Корпус</div>
-                <input id="name" type="text" class="form__input">
+                <input id="building-2" type="text" class="form__input">
               </label>            
               <label class="form__block">
                 <div class="form__block-title">Квартира</div>
-                <input id="name" type="text" class="form__input">
+                <input id="building-3" type="text" class="form__input">
               </label>     
               <label class="form__block">
                 <div class="form__block-title">Этаж</div>
-                <input id="name" type="text" class="form__input">
+                <input id="building-4" type="text" class="form__input">
               </label>     
             </div>                     
           </div>
@@ -606,7 +606,7 @@
             <div class="form__row form__row--mb form__row--textarea">
               <label class="form__block">
                 <div class="form__block-title">Комментарий</div>
-                <textarea class="form__textarea"></textarea>
+                <textarea id="comment" class="form__textarea"></textarea>
               </label>
             </div>
             <div class="form__row form__row--radio">
@@ -673,13 +673,23 @@
       <li class="pages-nav__item"><a href="#" class="pages-nav__link"></a></li> 
     </ul>
   </div>
-  <div class="popup">
+  <div class="popup popup--reviews">
     <div class="overlay">
       <div class="popup__container">
         <a href="#" class="popup__close"></a>
         <div class="popup__content">
           <div class="popup__title">Константин Спилберг</div>
           <div class="popup__description">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup popup--delivery">
+    <div class="overlay">
+      <div class="popup__container">
+        <div class="popup__content">          
+          <div class="popup__description popup__description--delivery"></div>
+          <a href="#" class="popup__close-link">Закрыть</a>
         </div>
       </div>
     </div>

@@ -92,7 +92,7 @@ sliderLeft.addEventListener('click', e => {
 document.querySelectorAll('.review__link, .review__link-mobile').forEach(elem => {
   elem.addEventListener('click', e => {
     e.preventDefault();
-    document.querySelector('.popup').classList.add('opened');
+    document.querySelector('.popup--reviews').classList.add('opened');
   });
 });
 
@@ -100,4 +100,39 @@ document.querySelectorAll('.review__link, .review__link-mobile').forEach(elem =>
 document.querySelector('.popup__close').addEventListener('click', e => {
   e.preventDefault();
   document.querySelector('.popup').classList.remove('opened');
+});
+
+// Отправка формы доставки
+document.querySelector('#form-delivery').addEventListener('submit', e => {
+  e.preventDefault();
+  
+  document.querySelector('.popup__description--delivery').textContent = '';
+
+  let name = document.querySelector('#name').value;
+  let phone = document.querySelector('#phone').value;
+  let comment = document.querySelector('#comment').value;
+
+  let formData = new FormData();
+  formData.append("name", name);
+  formData.append("phone", phone);
+  formData.append("comment", comment);
+  formData.append("to", "test@test.ru");
+
+  let req = new XMLHttpRequest();
+  req.open('POST', 'https://webdev-api.loftschool.com/sendmail', true);
+  req.onload = function() {
+    let response = JSON.parse(req.response);
+    let message = response.message;
+
+    document.querySelector('.popup__description--delivery').textContent = message;
+    document.querySelector('.popup--delivery').classList.add('opened');
+  };
+
+  req.send(formData);
+});
+
+// Закрытие модального окна
+document.querySelector('.popup__close-link').addEventListener('click', e => {
+  e.preventDefault();
+  document.querySelector('.popup--delivery').classList.remove('opened');
 });
