@@ -118,6 +118,10 @@ document.querySelector('#form-delivery').addEventListener('submit', e => {
   formData.append("comment", comment);
   formData.append("to", "test@test.ru");
 
+  console.log(name);
+  console.log(phone);
+  console.log(comment);
+
   let req = new XMLHttpRequest();
   req.open('POST', 'https://webdev-api.loftschool.com/sendmail', true);
   req.onload = function() {
