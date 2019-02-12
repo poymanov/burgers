@@ -1218,7 +1218,8 @@ ul li {
   font-weight: 400;
   white-space: nowrap;
   transform: rotate(-90deg);
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 315px; }
 
 .food-menu-accordeon__description {
   width: 0;
