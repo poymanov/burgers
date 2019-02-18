@@ -140,3 +140,47 @@ document.querySelector('.popup__close-link').addEventListener('click', e => {
   e.preventDefault();
   document.querySelector('.popup--delivery').classList.remove('opened');
 });
+
+ymaps.ready(init);
+
+let placemarks = [
+  {
+    latitude: 59.97,
+    longitude: 30.31,
+  },
+  {
+    latitude: 59.95,
+    longitude: 30.39,
+  },
+  {
+    latitude: 59.93,
+    longitude: 30.34,
+  }
+];
+
+function init() {
+	let mapYandex = new ymaps.Map("map-yandex", {
+		center: [59.94, 30.32],
+		zoom: 12
+	});
+
+	placemarks.forEach(obj => {
+		let placemark = new ymaps.Placemark(
+			[obj.latitude, obj.longitude],
+			{
+				hintContent: obj.hintContent,
+				hintContent: obj.balloonContent
+			},
+			{
+				iconLayout: "default#image",
+				iconImageHref: "./img/icons/map-marker.svg",
+				iconImageSize: [46, 57],
+				iconImageOffset: [-15, -50]
+			}
+		);
+
+		mapYandex.geoObjects.add(placemark);
+	});
+
+	mapYandex.behaviors.disable("scrollZoom");
+}
