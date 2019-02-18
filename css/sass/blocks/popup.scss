@@ -1,0 +1,85 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  &.opened {
+    display: block;
+  }
+}
+
+.popup__container {
+  background-color: $white;
+  border-radius: 5px;
+  padding-left: 1.188em;
+  padding-right: 1.438em;
+  padding-bottom: 1.688em;
+  padding-top: 1.688em;
+  position: relative;
+}
+
+.popup--reviews {
+  .popup__container {
+    width: 28.750em;
+  }
+}
+
+.popup__title {
+  color: #2f3234;
+  font-family: 'Gagalin', Helvetica, sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  margin-bottom: 1.250em;
+}
+
+.popup__description {
+  color: #2f3234;
+  font-size: 0.875em;
+  font-weight: 300;
+  line-height: 1.714em;
+}
+
+.popup__close {
+  width: 0.938em;
+  height: 0.938em;
+  display: block;
+  position: absolute;
+  right: 1.250em;
+  top: 1.250em;
+  background: url('../img/popup-close.png') center center no-repeat;
+}
+
+.popup__close-link {
+  width: 7.462em;  
+  background-color: #e45028;
+  color: $white;
+  font-size: 0.813em;
+  font-weight: 500;  
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.308em;
+  padding: 0.692em 0 0.615em;
+  display: block;
+  margin: 0 auto;
+}
+
+.popup__description--delivery {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.popup--delivery {
+  .popup__container {
+    background-color: $white;
+    border-radius: 5px;
+    padding-left: 1.088em;
+    padding-right: 1.038em;
+    padding-bottom: 1.088em;
+    padding-top: 1.088em;
+  }
+}
