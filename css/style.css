@@ -1035,6 +1035,52 @@ ul li {
 
   .review__link-mobile {
     display: block; } }
+.about {
+  height: 40.625em;
+  background: url("../img/bg/about.jpg") center top no-repeat/cover;
+  position: relative;
+  padding-top: 3.688em; }
+
+.about__video {
+  width: 41.250em;
+  height: 25.313em;
+  margin: 0 auto; }
+  .about__video video {
+    width: 100%;
+    height: 100%; }
+
+.about__header {
+  color: #2f3234;
+  font-family: 'Gagalin', Helvetica, sans-serif;
+  font-size: 3.813em;
+  font-weight: 400;
+  margin-bottom: 0.347em;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .about {
+    height: 64.000em;
+    padding-top: 13.375em; }
+
+  .about__header {
+    font-size: 4.500em; }
+
+  .about__video {
+    width: 45.000em;
+    height: 28.250em; } }
+@media (max-width: 480px) {
+  .about {
+    height: 50.000em;
+    padding-top: 9.000em; }
+
+  .about__header {
+    font-size: 3.125em;
+    width: 4.020em;
+    margin: 0 auto 1.060em; }
+
+  .about__video {
+    width: 28.750em;
+    height: 15.750em; } }
 .team {
   height: 40.625em;
   background: url("../img/team.jpg") center top no-repeat/cover;
